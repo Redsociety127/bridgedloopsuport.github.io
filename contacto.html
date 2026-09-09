@@ -1,97 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Alejandro Parra Ramos</title>
+    <title>Contacto | BRIDGED LOOP Technological Support</title>
+    <meta name="description"
+        content="Solicita asistencia técnica inmediata o cotiza tu plan de mantenimiento empresarial con BRIDGED LOOP.">
+    <link rel="icon" type="image/svg+xml" href="recursos/logo_BL_white.svg">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #E0E2E3 !important;
-            color: #BB5E28 !important;
-        }
-        .header {
-            background: rgba(224, 226, 227, 0.85) !important;
-        }
-        .header .logo, .nav a, .section-title, .contact-info h3, .contact-info p, .contact-info strong {
-            color: #BB5E28 !important;
-        }
-        .nav a::after {
-            background: #BB5E28 !important;
-        }
-        .section-title::after {
-            background: #BB5E28 !important;
-        }
-        .form-control {
-            color: #BB5E28 !important;
-            background: rgba(255, 255, 255, 0.8) !important;
-            border-color: #BB5E28 !important;
-        }
-        .form-control::placeholder {
-            color: rgba(187, 94, 40, 0.7) !important;
-        }
-        .footer p {
-            color: #BB5E28 !important;
-        }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <!-- Navegación -->
-    <header class="header">
-        <a href="index.html" class="logo">APR</a>
-        <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Portafolio</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <div class="site-wrapper">
+        <!-- HEADER / NAVEGACIÓN -->
+        <header class="site-header physics-item">
+            <a href="index.html" class="logo-container">
+                <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP Logo" class="logo-svg">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="nostros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contáctanos</a></li>
+                </ul>
+                <button class="gravity-toggle-btn" id="gravity-toggle">
+                    <span class="btn-icon">⚡</span> Activar Gravedad
+                </button>
+            </nav>
+        </header>
 
-    <!-- Contacto Section -->
-    <section class="section" style="padding-top: 150px; min-height: calc(100vh - 80px);">
-        <h2 class="section-title reveal">Ponte en Contacto</h2>
-        
-        <div class="grid-2">
-            <!-- Info -->
-            <div class="contact-info reveal-left">
-                <h3>Información de Contacto</h3>
-                <p style="margin-top: 20px;">
-                    ¿Tienes algún proyecto en mente o necesitas soporte técnico profesional? 
-                    No dudes en contactarme a través de los siguientes medios:
-                </p>
-                <div style="margin-top: 40px;">
-                    <p><strong>Email:</strong> alejandro.p.r1993@gmail.com</p>
-                    <p><strong>Teléfono:</strong> 33-4716-3486</p>
-                    <p><strong>Ubicación:</strong> Guadalajara, jal. México.</p>
-                </div>
-            </div>
+        <!-- ENCABEZADO DE SECCIÓN -->
+        <div class="section-heading physics-item">
+            <span class="section-tag">Mesa de Ayuda & Diagnósticos</span>
+            <h1 class="section-title">Contáctanos / Reportar Incidencia</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0.75rem auto 0;">
+                Completa el formulario y un ingeniero de soporte asignado te contactará en menos de 15 minutos.
+            </p>
+        </div>
 
-            <!-- Form -->
-            <div class="contact-form reveal-right">
-                <form action="#" method="POST">
+        <!-- CONTENEDOR DE CONTACTO -->
+        <section class="contact-section-container">
+            <!-- FORMULARIO FÍSICO MODULAR -->
+            <div class="contact-card physics-item">
+                <h3
+                    style="font-size: 1.4rem; color: #fff; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                    <span>Ticket de Asistencia Técnica</span>
+                </h3>
+                <form class="contact-form"
+                    onsubmit="event.preventDefault(); alert('Ticket generado correctamente. Un ingeniero de BRIDGED LOOP se comunicará a la brevedad.');">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Tu Nombre" required>
+                        <label class="form-label">Nombre Completo / Empresa</label>
+                        <input type="text" class="form-input" placeholder="Ej. Juan Pérez - Innovatech" required>
                     </div>
+
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Tu Correo Electrónico" required>
+                        <label class="form-label">Correo Electrónico Corporativo</label>
+                        <input type="email" class="form-input" placeholder="nombre@empresa.com" required>
                     </div>
+
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Asunto" required>
+                        <label class="form-label">Tipo de Soporte Requerido</label>
+                        <select class="form-select">
+                            <option>Mantenimiento y Optimización de Equipos</option>
+                            <option>Infraestructura de Redes / WiFi Empresarial</option>
+                            <option>Servidores, Cloud & Virtualización</option>
+                            <option>Ciberseguridad & Recuperación de Datos</option>
+                            <option>Auditoría Integral de Sistemas</option>
+                        </select>
                     </div>
+
                     <div class="form-group">
-                        <textarea class="form-control" placeholder="Tu Mensaje" required></textarea>
+                        <label class="form-label">Descripción de la Incidencia o Proyecto</label>
+                        <textarea class="form-textarea"
+                            placeholder="Describe brevemente el problema técnico o el alcance del servicio..."></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; margin-top: 0.5rem; font-size: 1.05rem;">
+                        Enviar Ticket de Soporte &rarr;
+                    </button>
                 </form>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Alejandro Parra Ramos. Todos los derechos reservados.</p>
-    </footer>
+            <!-- INFORMACIÓN Y CANALES DIRECTOS -->
+            <div class="contact-info-card physics-item">
+                <div>
+                    <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 1.5rem;">Canales de Atención Directa</h3>
 
-    <script src="script.js"></script>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="info-item">
+                            <div class="info-icon">✉</div>
+                            <div class="info-content">
+                                <h4>Mesa de Entrada</h4>
+                                <a href="mailto:soporte@bridgedloop.com">soporte@bridgedloop.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">☎</div>
+                            <div class="info-content">
+                                <h4>Línea Telefónica 24/7</h4>
+                                <a href="tel:+525580005667">+52 (55) 8000-LOOP (5667)</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">⚲</div>
+                            <div class="info-content">
+                                <h4>Centro de Operaciones IT</h4>
+                                <p>Av. Tecnológica 1024, Edificio Loop, Piso 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(255, 102, 0, 0.08); border: 1px dashed var(--primary); padding: 1.25rem; border-radius: var(--radius-md); text-align: center;">
+                    <p style="font-family: var(--font-tech); font-size: 0.85rem; color: var(--primary);">
+                        STATUS DEL NOC: <strong>100% OPERATIVO</strong>
+                    </p>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">
+                        Ingenieros en guardia disponibles en tiempo real.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer physics-item">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP" style="height: 38px;">
+                    <p class="footer-desc">Soluciones y soporte tecnológico corporativo para empresas en constante
+                        crecimiento.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nostros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BRIDGED LOOP. Todos los derechos reservados.</span>
+                <span>soporte@bridgedloop.com &bull; Tel: +52 (55) 8000-LOOP</span>
+            </div>
+        </footer>
+    </div>
+
 </body>
+
 </html>

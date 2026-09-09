@@ -4,258 +4,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Parra Ramos | Ing. Software</title>
+    <title>BRIDGED LOOP | Soporte Técnico y Soluciones Tecnológicas</title>
+    <meta name="description"
+        content="Soporte técnico corporativo integral, mantenimiento de infraestructura, servidores, redes y ciberseguridad.">
+    <link rel="icon" type="image/svg+xml" href="recursos/logo_BL_white.svg">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Curriculum Vitae y Portafolio de Alejandro Parra Ramos, Ingeniero de Software.">
+    <!-- Matter.js Physics Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navegación -->
-    <header class="header">
-        <a href="index.html" class="logo">APR</a>
-        <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="proyectos.html">Portafolio</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <div class="site-wrapper">
+        <!-- HEADER / NAVEGACIÓN -->
+        <header class="site-header physics-item">
+            <a href="index.html" class="logo-container">
+                <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP Logo" class="logo-svg">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="nostros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+                </ul>
+                <button class="gravity-toggle-btn" id="gravity-toggle" title="Desata la física de la página">
+                    <span class="btn-icon">⚡</span> Activar Gravedad
+                </button>
+            </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-content reveal-left">
-            <h2>Hola, soy</h2>
-            <h1>Alejandro <span>Parra</span> Ramos</h1>
-            <h2>Ingeniero de Software</h2>
-            <p>
-                Especialista en soporte técnico, redes y desarrollo de software con experiencia
-                en mantenimiento de sistemas, gestión de tickets y resolución de problemas TI.
-            </p>
-            <div class="hero-btns" style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                <a href="media/AlejandroParraCV.pdf" download class="btn">Descargar CV</a>
-                <a href="contacto.html" class="btn btn-outline">Contáctame</a>
-                <a href="https://www.linkedin.com/in/alejandro-parra-ramos-2428a6340" target="_blank"
-                    rel="noopener noreferrer"
-                    style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: #0077b5; border-radius: 5px; color: white; text-decoration: none; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);"
-                    onmouseover="this.style.transform='translateY(-5px)'"
-                    onmouseout="this.style.transform='translateY(0)'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="hero-image reveal-right">
-            <img src="media/yo.jpeg" alt="Alejandro Parra Ramos">
-        </div>
-    </section>
-
-    <!-- Experiencia Laboral -->
-    <section class="section" id="experiencia">
-        <h2 class="section-title reveal">Experiencia Laboral</h2>
-        <div class="timeline">
-
-            <div class="card reveal">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <img src="media/globalgas.jpg" alt="Global Gas"
-                        style="width: 60px; height: 60px; border-radius: 10px; object-fit: cover;">
-                    <div>
-                        <h3 style="margin-bottom: 5px;">Global Gas</h3>
-                        <h4 style="margin-bottom: 0;">Soporte en Sistemas</h4>
-                    </div>
+        <!-- SECCIÓN HERO -->
+        <section class="hero-section">
+            <div class="hero-content physics-item">
+                <div class="hero-badge">
+                    <span>●</span> Soporte Técnico & Infraestructura IT
                 </div>
-                <ul style="color: #FFFFFF; list-style-type: none; margin-left: 0; line-height: 1.8;">
-                    <li style="margin-bottom: 10px;"><strong>Gestión de ITSM:</strong> Administración y resolución de
-                        incidencias a través de la plataforma GLPI, optimizando los tiempos de respuesta para el usuario
-                        final.</li>
-                    <li style="margin-bottom: 10px;"><strong>Infraestructura y SITE:</strong> Supervisión directa del
-                        SITE, garantizando la disponibilidad de los servicios de red y servidores.</li>
-                    <li style="margin-bottom: 10px;"><strong>Gestión de Proveedores:</strong> Coordinación con terceros
-                        para el desarrollo de proyectos tecnológicos y adquisición de insumos técnicos.</li>
-                    <li style="margin-bottom: 10px;"><strong>Ciclo de Vida de Activos:</strong> Control administrativo
-                        de inventarios TI, gestionando desde la implementación de equipos nuevos hasta la baja de
-                        activos obsoletos.</li>
-                    <li style="margin-bottom: 10px;"><strong>Soporte Multi-Sede:</strong> Despliegue de asistencia
-                        técnica presencial y remota a nivel regional, cubriendo necesidades críticas fuera de la plaza
-                        principal en la planta de compresión de gas en el salto jalisco.</li>
-                    <li style="margin-bottom: 10px;"><strong>Soporte Técnico Integral:</strong> Ejecución de programas
-                        de mantenimiento preventivo para prolongar la vida útil del hardware y optimizar el rendimiento
-                        del software en equipos de cómputo y periféricos.</li>
-                    <li style="margin-bottom: 10px;"><strong>Resolución de Incidencias (Soporte Correctivo):</strong>
-                        Diagnóstico y reparación de fallas críticas en estaciones de trabajo, asegurando la mínima
-                        interrupción de las actividades de los usuarios mediante intervenciones técnicas oportunas.</li>
-                    <li style="margin-bottom: 10px;"><strong>Gestión de Presencia Web y Landing Pages:</strong><br>
-                        &nbsp;&nbsp;&nbsp;• Administración de CMS (WordPress): Gestión y mantenimiento de sitios web
-                        mediante la plataforma WordPress, asegurando la actualización constante de contenidos y la
-                        estabilidad del sitio.<br>
-                        &nbsp;&nbsp;&nbsp;• Desarrollo de Landing Pages: Diseño y configuración de páginas de aterrizaje
-                        enfocadas en la conversión, aplicando principios de diseño web funcional y estructurado.
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card reveal">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <img src="media/jabil.png" alt="Jabil"
-                        style="width: 60px; height: 60px; border-radius: 10px; object-fit: cover;">
-                    <div>
-                        <h3 style="margin-bottom: 5px;">Jabil</h3>
-                        <h4 style="margin-bottom: 0;">Soporte Técnico</h4>
-                    </div>
+                <h1 class="hero-title">
+                    ¿Tu equipo va <span class="highlight">lento</span>? Optimizamos tu tecnología.
+                </h1>
+                <p class="hero-description">
+                    En <strong>BRIDGED LOOP</strong> convertimos los cuellos de botella informáticos en rendimiento
+                    continuo. Mantenimiento preventivo, servidores, redes empresariales y ciberseguridad a tu medida.
+                </p>
+                <div class="hero-actions">
+                    <a href="servicios.html" class="btn-primary">Explorar Servicios</a>
+                    <a href="contacto.html" class="btn-secondary">Solicitar Diagnóstico</a>
                 </div>
-                <ul style="color: #FFFFFF; list-style-type: none; margin-left: 0; line-height: 1.8;">
-                    <li style="margin-bottom: 10px;"><strong>Gestión de ITSM:</strong> Administración eficiente de flujo
-                        de trabajo basado en tickets mediante ServiceNow, priorizando la atención de fallas críticas en
-                        el edificio y líneas de producción.</li>
-                    <li style="margin-bottom: 10px;"><strong>Infraestructura y Conectividad:</strong> Configuración y
-                        habilitación de nodos de red (puertos) y periféricos esenciales para la operación, como
-                        impresoras corporativas e industriales.</li>
-                    <li style="margin-bottom: 10px;"><strong>Mantenimiento de Activos:</strong> Ejecución de planes de
-                        mantenimiento preventivo y correctivo para estaciones de trabajo de nueva generación y equipos
-                        heredados (legacy), extendiendo su ciclo de vida útil.</li>
-                    <li style="margin-bottom: 10px;"><strong>Gestión de Software Especializado:</strong> Administración
-                        y soporte en la plataforma Loftware para el desarrollo y despliegue de etiquetas de producto,
-                        asegurando la precisión en la identificación de mercancía para clientes finales.</li>
-                    <li style="margin-bottom: 10px;"><strong>Control de Proveedores:</strong> Coordinación y supervisión
-                        de servicios externos, incluyendo la generación de reportes detallados de cumplimiento y
-                        bitácoras de visita.</li>
-                </ul>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Educación y Cursos -->
-    <section class="section" id="educacion">
-        <h2 class="section-title reveal">Educación</h2>
-        <div class="timeline">
-            <div class="card reveal">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-                    <img src="media/fitech.jpg" alt="Instituto FiTech"
-                        style="width: 60px; height: 60px; border-radius: 10px; object-fit: cover;">
-                    <div>
-                        <h3 style="margin-bottom: 5px;">Instituto FiTech</h3>
-                        <h4 style="margin-bottom: 0;">Ingeniería de Software</h4>
+            <!-- CONTENEDOR DE MEDIA / VIDEO -->
+            <div class="hero-media-box physics-item">
+                <div class="media-container">
+                    <div class="media-fallback-banner">
+                        <img src="recursos/Recurso7.svg" alt="Tecnología y Monitoreo" class="media-svg-graphic">
+                        <div>
+                            <h3 style="font-size: 1.1rem; color: #fff;">Monitoreo Continuo 24/7</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-tech);">
+                                SISTEMA ACTIVO // TELEMETRÍA EN TIEMPO REAL</p>
+                        </div>
                     </div>
+                    <span class="media-badge-status">Servidores Online</span>
                 </div>
-                <p>2023 – Actual (A un año de concluir)</p>
+                <div class="media-caption">
+                    <span>BRIDGED_LOOP_SYS.V2</span>
+                    <span>99.98% UPTIME</span>
+                </div>
             </div>
+        </section>
 
-            <div class="card reveal">
-                <h3>Cursos Destacados</h3>
-                <ul>
-                    <li>Técnico en reparación de laptops en Edutin</li>
-                    <li>Seguridad informática en Hacker Garaje</li>
-                    <li>Mantenimiento y Reparación de Computadores en Edutin</li>
-                </ul>
-            </div>
+        <!-- SERVICIOS MODULARES -->
+        <div class="section-heading physics-item">
+            <span class="section-tag">Soluciones Especializadas</span>
+            <h2 class="section-title">Infraestructura & Soporte Corporativo</h2>
         </div>
-    </section>
 
-    <!-- Habilidades -->
-    <section class="section" id="habilidades">
-        <h2 class="section-title reveal">Habilidades Técnicas</h2>
-        <div class="skills-container reveal">
+        <section class="services-grid">
+            <!-- Servicio 1 -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconomantenimiento.svg" alt="Mantenimiento" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Mantenimiento de Sistemas</h3>
+                    <p class="service-desc">Optimización preventiva y correctiva de hardware y sistemas operativos para
+                        empresas.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Hardware & SO</span>
+                    <span>&rarr;</span>
+                </div>
+            </div>
 
-            <div class="skill-category">
-                <h3>Soporte Técnico</h3>
-                <ul>
-                    <li>Mantenimiento de PC y Laptops</li>
-                    <li>Respaldo y recuperación de archivos</li>
-                    <li>Administración de Directorio Activo</li>
-                    <li>Instalación de S.O. y Software</li>
-                    <li>Soporte remoto</li>
-                    <li>Manejo de Office 365</li>
+            <!-- Servicio 2 -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoredespuntos.svg" alt="Redes" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Redes & Conectividad</h3>
+                    <p class="service-desc">Diseño, cableado estructurado, configuración de routers empresariales y
+                        enlaces de alta velocidad.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; VLAN & Fibra</span>
+                    <span>&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoservidores.svg" alt="Servidores" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Servidores & Cloud</h3>
+                    <p class="service-desc">Implementación y administración de servidores locales, entornos
+                        virtualizados y copias de seguridad.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Windows / Linux</span>
+                    <span>&rarr;</span>
+                </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconorecuperasiondedatos.svg" alt="Ciberseguridad" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Ciberseguridad & Backup</h3>
+                    <p class="service-desc">Auditorías de seguridad, protección perimetral, firewall y planes de
+                        recuperación ante desastres.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Protección Total</span>
+                    <span>&rarr;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALORES / CARACTERÍSTICAS -->
+        <section class="about-features-grid">
+            <div class="feature-box physics-item">
+                <div class="feature-number">01.</div>
+                <h3 class="feature-title">Respuesta Inmediata</h3>
+                <p class="feature-text">Tiempos de respuesta inferiores a 15 minutos para incidencias críticas de
+                    infraestructura.</p>
+            </div>
+            <div class="feature-box physics-item">
+                <div class="feature-number">02.</div>
+                <h3 class="feature-title">Especialistas Certificados</h3>
+                <p class="feature-text">Ingenieros con experiencia en entornos de alta disponibilidad y soporte
+                    multiplataforma.</p>
+            </div>
+            <div class="feature-box physics-item">
+                <div class="feature-number">03.</div>
+                <h3 class="feature-title">Monitoreo Predictivo</h3>
+                <p class="feature-text">Detección anticipada de anomalías para evitar caídas y pérdidas de
+                    productividad.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER CORPORATIVO -->
+        <footer class="site-footer physics-item">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP" style="height: 38px;">
+                    <p class="footer-desc">Soluciones y soporte tecnológico corporativo para empresas en constante
+                        crecimiento.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nostros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
-            <div class="skill-category">
-                <h3>Programación & Web</h3>
-                <ul>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML & CSS</li>
-                    <li>WordPress</li>
-                </ul>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BRIDGED LOOP. Todos los derechos reservados.</span>
+                <span>soporte@bridgedloop.com &bull; Tel: +52 (55) 8000-LOOP</span>
             </div>
+        </footer>
+    </div>
 
-            <div class="skill-category">
-                <h3>Redes</h3>
-                <ul>
-                    <li>Configuración de Routers, APs, Switches</li>
-                    <li>Reparación de cableado y puertos</li>
-                    <li>Diagnóstico y solución de caídas de Internet</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Habilidades Profesionales -->
-    <section class="section" id="habilidades-profesionales">
-        <h2 class="section-title reveal">Habilidades Profesionales</h2>
-        <div class="skills-container reveal">
-            <div class="skill-category">
-                <h3>Competencias Clave</h3>
-                <ul>
-                    <li>Trabajo en equipo y colaboración</li>
-                    <li>Resolución de problemas</li>
-                    <li>Comunicación efectiva</li>
-                    <li>Atención al cliente y empatía</li>
-                    <li>Gestión del tiempo y priorización</li>
-                    <li>Adaptabilidad y aprendizaje continuo</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <h3>Competencias Profecionales</h3>
-                <ul>
-                    <li>Gestión de proyectos.</li>
-                    <li>Resolver incidencias técnicas.</li>
-                    <li>Coordinación con proveedores.</li>
-                    <li>Dar mantenimiento preventivo y correctivo a equipos y sistemas.</li>
-                    <li>Respaldar información y cuidar la seguridad de los datos.</li>
-                    <li>Manejo de CCTV.</li>
-                    <li>Administración de switches y access points.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sistemas Operativos -->
-    <section class="section" id="sistemas-operativos">
-        <h2 class="section-title reveal">SISTEMAS OPERATIVOS QUE DOMINO</h2>
-        <div class="reveal" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
-            <div class="skill-category"
-                style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; text-align: center;">
-                <img src="media/windowsos.png" alt="Windows OS"
-                    style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 15px;">
-                <h3 style="margin-bottom: 0; border: none; padding: 0;">Windows</h3>
-            </div>
-            <div class="skill-category"
-                style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; text-align: center;">
-                <img src="media/linux.png" alt="Linux OS"
-                    style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 15px;">
-                <h3 style="margin-bottom: 0; border: none; padding: 0;">Linux</h3>
-            </div>
-            <div class="skill-category"
-                style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; text-align: center;">
-                <img src="media/macos.png" alt="macOS"
-                    style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 15px;">
-                <h3 style="margin-bottom: 0; border: none; padding: 0;">macOS</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Alejandro Parra Ramos. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

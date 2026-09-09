@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.4 164">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 11.12px;
+      }
+
+      .cls-2 {
+        fill: #efebe4;
+      }
+
+      .cls-3 {
+        font-family: ProductSans-Medium, 'Product Sans Medium';
+        font-size: 55.59px;
+        font-weight: 500;
+      }
+
+      .cls-4 {
+        fill: #7c3333;
+      }
+
+      .cls-5 {
+        fill: #ea5e5e;
+      }
+
+      .cls-6 {
+        fill: #222;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <path class="cls-6" d="M146.4,146.4H0V28.35C11.07,17.28,17.28,11.07,28.35,0h89.7c11.07,11.07,17.28,17.28,28.35,28.35v118.05Z"/>
+      <rect class="cls-2" x="12.97" y="39.84" width="120.45" height="63.01"/>
+      <rect class="cls-4" x="12.05" y="146.4" width="122.31" height="17.6"/>
+      <rect class="cls-4" x="12.97" y="133.42" width="121.38" height="3.71"/>
+      <rect class="cls-4" x="12.97" y="126.94" width="121.38" height="3.71"/>
+      <rect class="cls-4" x="12.97" y="120.45" width="121.38" height="3.71"/>
+      <rect class="cls-4" x="12.97" y="113.97" width="121.38" height="3.71"/>
+      <rect class="cls-2" x="12.97" y="21.31" width="120.45" height="12.05"/>
+      <rect class="cls-5" x="20.38" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="36.14" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="70.42" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="52.81" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="87.1" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="103.77" y="146.4" width="5.56" height="17.6"/>
+      <rect class="cls-5" x="120.45" y="146.4" width="5.56" height="17.6"/>
+      <text class="cls-1" transform="translate(17.6 30.75)"><tspan x="0" y="0">1010101011110010001</tspan></text>
+      <text class="cls-3" transform="translate(25.24 89.53)"><tspan x="0" y="0">S</tspan><tspan class="cls-7" x="31.35" y="0">.O</tspan><tspan x="88.45" y="0">.</tspan></text>
+    </g>
+  </g>
+</svg>

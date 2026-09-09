@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 119">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: ProductSans-Medium, 'Product Sans Medium';
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #efebe4;
+      }
+
+      .cls-3 {
+        fill: #222;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-3" width="181" height="119" rx="12" ry="12"/>
+      <rect class="cls-2" x="6.98" y="6.65" width="85.04" height="56.69" rx="12" ry="12"/>
+      <rect class="cls-2" x="90.48" y="56.15" width="85.04" height="56.69" rx="12" ry="12"/>
+      <text class="cls-1" transform="translate(98.62 24.96)"><tspan x="0" y="0">11</tspan><tspan class="cls-5" x="12.93" y="0">0</tspan><tspan x="23.17" y="0">111000</tspan><tspan class="cls-5" x="3.47" y="19.2">0</tspan><tspan x="13.71" y="19.2">1</tspan><tspan class="cls-4" x="20.18" y="19.2">0</tspan><tspan x="30.42" y="19.2">1</tspan><tspan class="cls-4" x="36.88" y="19.2">0</tspan><tspan x="47.12" y="19.2">1</tspan><tspan class="cls-5" x="53.58" y="19.2">0</tspan><tspan x="63.82" y="19.2">1</tspan></text>
+      <circle class="cls-3" cx="133" cy="84" r="19.5"/>
+      <circle class="cls-3" cx="24.5" cy="22.5" r="8"/>
+      <rect class="cls-3" x="38.5" y="12.5" width="45" height="12"/>
+      <rect class="cls-3" x="38.5" y="28.5" width="45" height="12"/>
+      <rect class="cls-3" x="38.5" y="44.5" width="45" height="12"/>
+      <rect class="cls-2" x="10.5" y="71.5" width="69" height="10.36"/>
+      <rect class="cls-2" x="10.5" y="85.32" width="69" height="10.36"/>
+      <rect class="cls-2" x="10.5" y="99.14" width="69" height="10.36"/>
+    </g>
+  </g>
+</svg>

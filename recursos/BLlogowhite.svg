@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.4 84.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ececec;
+        font-family: OxaniumRoman-Medium, Oxanium;
+        font-size: 48px;
+        font-variation-settings: 'wght' 500;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #efece5;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        fill: #e4e4e4;
+        font-family: OCR-B, OCR-B;
+        font-size: 16px;
+        letter-spacing: -.06em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <text class="cls-1" transform="translate(87.06 40.56)"><tspan x="0" y="0">BRIDGED LOOP</tspan></text>
+    <g>
+      <circle class="cls-2" cx="38.98" cy="18.88" r="15.84"/>
+      <circle class="cls-2" cx="18.84" cy="53.88" r="15.84"/>
+      <circle class="cls-2" cx="59.3" cy="53.88" r="15.84"/>
+    </g>
+    <text class="cls-3" transform="translate(90.14 69.23) scale(1.02 1)"><tspan x="0" y="0">Technological Support</tspan></text>
+  </g>
+</svg>

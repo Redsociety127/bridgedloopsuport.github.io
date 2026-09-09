@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.05 156">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efebe4;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #222;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #222;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <circle class="cls-4" cx="72.7" cy="83.3" r="37.07"/>
+      <circle class="cls-2" cx="121.55" cy="21.51" r="20.01"/>
+      <circle class="cls-1" cx="72.7" cy="83.3" r="32.37"/>
+      <circle class="cls-1" cx="121.55" cy="21.51" r="16.48"/>
+      <circle class="cls-2" cx="22.1" cy="133.9" r="20.6"/>
+      <circle class="cls-2" cx="125.08" cy="96.83" r="9.42"/>
+      <circle class="cls-1" cx="125.08" cy="96.83" r="7.06"/>
+      <circle class="cls-1" cx="22.1" cy="133.9" r="18.24"/>
+      <circle class="cls-2" cx="19.74" cy="42.1" r="14.71"/>
+      <circle class="cls-1" cx="19.74" cy="42.1" r="12.36"/>
+      <path class="cls-3" d="M27.14,113.93s15.2,2.42,16.55-10.87"/>
+      <path class="cls-3" d="M39.75,124.49s-4.11-11.17,10.3-13.82"/>
+      <path class="cls-3" d="M34.25,44.53s-1.08,13.83,16.92,11.58"/>
+      <path class="cls-3" d="M27.02,54.89s12.11-2.88,15.95,11"/>
+      <path class="cls-3" d="M85.44,51.15s19.04-1.01,19.63-19.15"/>
+      <path class="cls-3" d="M114.49,38.57s-15.06,5.73-16.06,21.7"/>
+      <path class="cls-3" d="M106.87,88.09c5.02,3.29,11.8,2.21,11.8,2.21"/>
+      <path class="cls-3" d="M115.9,98.62c-4.34-4.14-11.2-4.31-11.2-4.31"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 136">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efebe4;
+      }
+
+      .cls-2 {
+        fill: #e05e0a;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #222;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #222;
+      }
+
+      .cls-5 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-6 {
+        fill: #a2a2a2;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <path class="cls-4" d="M28.35,0h101.31c15.64,0,28.35,12.7,28.35,28.35v88.65H0V28.35C0,12.7,12.7,0,28.35,0Z"/>
+      <rect class="cls-1" x="14" y="31" width="130" height="57"/>
+      <rect class="cls-6" x="13" y="117" width="132" height="19"/>
+      <rect class="cls-2" x="13" y="22" width="131" height="4"/>
+      <rect class="cls-2" x="13" y="15" width="131" height="4"/>
+      <rect class="cls-1" x="14" y="94" width="130" height="13"/>
+      <rect class="cls-1" x="22" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="39" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="76" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="57" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="94" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="112" y="117" width="6" height="19"/>
+      <rect class="cls-1" x="130" y="117" width="6" height="19"/>
+      <text class="cls-5" transform="translate(19 104.19)"><tspan x="0" y="0">1010101011110010001</tspan></text>
+      <g>
+        <circle class="cls-3" cx="78.97" cy="47.61" r="10.61"/>
+        <circle class="cls-3" cx="65.48" cy="71.07" r="10.61"/>
+        <circle class="cls-3" cx="92.59" cy="71.07" r="10.61"/>
+      </g>
+    </g>
+  </g>
+</svg>

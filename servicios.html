@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | BRIDGED LOOP Technological Support</title>
+    <meta name="description"
+        content="Servicios integrales de soporte IT: mantenimiento, redes, servidores y ciberseguridad.">
+    <link rel="icon" type="image/svg+xml" href="recursos/logo_BL_white.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <!-- HEADER / NAVEGACIÓN -->
+        <header class="site-header physics-item">
+            <a href="index.html" class="logo-container">
+                <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP Logo" class="logo-svg">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+                    <li><a href="nostros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+                </ul>
+                <button class="gravity-toggle-btn" id="gravity-toggle">
+                    <span class="btn-icon">⚡</span> Activar Gravedad
+                </button>
+            </nav>
+        </header>
+
+        <!-- ENCABEZADO DE SECCIÓN -->
+        <div class="section-heading physics-item" style="margin-top: 1rem;">
+            <span class="section-tag">Catálogo Corporativo</span>
+            <h1 class="section-title">Servicios de Ingeniería y Soporte IT</h1>
+            <p style="color: var(--text-muted); max-width: 650px; margin: 0.75rem auto 0;">
+                Diseñamos e implementamos soluciones tecnológicas para garantizar la continuidad operativa de tu
+                negocio.
+            </p>
+        </div>
+
+        <!-- CUADRÍCULA COMPLETA DE SERVICIOS -->
+        <section class="services-grid" style="margin-top: 2.5rem;">
+            <!-- Servicio : Mantenimiento -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconomantenimiento.svg" alt="Mantenimiento" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Mantenimiento Preventivo & Correctivo</h3>
+                    <p class="service-desc">Limpieza física profunda, reemplazo de pasta térmica, optimización de
+                        registro, eliminación de malware y puesta a punto de estaciones de trabajo.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Hardware</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Formateo y reinstalacion de S.O. -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoSO.svg" alt="Formateo y reinstalacion de S.O." class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Formateo y reinstalacion de S.O.</h3>
+                    <p class="service-desc">Instalación y reinstalación de sistemas operativos Windows, Linux y MacOS.
+                    </p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Software</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Instalacion de Sowftware y drivers -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoinstsoftware.svg" alt="Instalacion de Sowftware y drivers"
+                        class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Instalación de Sowftware y drivers</h3>
+                    <p class="service-desc">Instalación de software, drivers y controladores de hardware.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Software</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Reparasion -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoreparasion.svg" alt="Reparasion" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Reparación de Equipos</h3>
+                    <p class="service-desc">Diagnóstico y reparación de computadoras, laptops y componentes
+                        electrónicos.
+                    </p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Hardware</span>
+                </div>
+            </div>
+
+            <!-- Servicio : configuracion de Modem/Router y WiFi -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoredesojo.svg" alt="configuracion de Modem/Router y WiFi"
+                        class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Configuración de Modem/Router y WiFi</h3>
+                    <p class="service-desc">Instalación, configuración y optimización de módems, routers y redes WiFi.
+                    </p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Hardware</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Redes -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconoredespuntos.svg" alt="Redes y Cableado" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Infraestructura de Redes</h3>
+                    <p class="service-desc">Cableado estructurado Cat 6/6A/7, certificación de puntos de red,
+                        configuración de switches administrables y routers empresariales.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Conectividad</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Recuperación de Datos -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconorecuperasiondedatos.svg" alt="Recuperación de Datos" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Backup & Recuperación de Datos</h3>
+                    <p class="service-desc">Estrategias de respaldo 3-2-1 con cifrado AES-256, snapshots inmutables
+                        contra ransomware y planes de Disaster Recovery.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Respaldo</span>
+                </div>
+            </div>
+
+            <!-- Servicio : Soporte Tecnico -->
+            <div class="service-card physics-item">
+                <div class="service-icon-box">
+                    <img src="recursos/iconosoporte.svg" alt="Soporte Tecnico" class="service-icon">
+                </div>
+                <div>
+                    <h3 class="service-title">Soporte Técnico Especializado</h3>
+                    <p class="service-desc">Atención remota, técnicos certificados y SLA garantizado con tiempo
+                        máximo de respuesta de 1 hora.</p>
+                </div>
+                <div class="service-meta">
+                    <span>&bull; Soporte Tecnico</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="hero-section physics-item"
+            style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-top: 2rem;">
+            <div class="hero-content">
+                <h2 style="font-size: 2rem; color: #fff;">¿Necesitas un plan de soporte para tu empresa?</h2>
+                <p style="color: var(--text-muted);">Realizamos una auditoría sin costo de tu infraestructura actual
+                    para entregarte una propuesta personalizada.</p>
+            </div>
+            <div style="display: flex; justify-content: flex-end; align-items: center;">
+                <a href="contacto.html" class="btn-primary" style="font-size: 1.1rem; padding: 1rem 2.2rem;">Cotizar
+                    Plan IT</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer physics-item">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="recursos/BLlogowhite.svg" alt="BRIDGED LOOP" style="height: 38px;">
+                    <p class="footer-desc">Soluciones y soporte tecnológico corporativo para empresas en constante
+                        crecimiento.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nostros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BRIDGED LOOP. Todos los derechos reservados.</span>
+                <span>soporte@bridgedloop.com &bull; Tel: +52 (55) 8000-LOOP</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

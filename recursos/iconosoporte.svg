@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
+  <defs>
+    <style>
+      .cls-dark {
+        fill: #222222;
+      }
+      .cls-orange {
+        fill: #e05e0a;
+      }
+      .cls-light {
+        fill: #efebe4;
+      }
+      .cls-gray {
+        fill: #a2a2a2;
+      }
+      .cls-line {
+        fill: none;
+        stroke: #222222;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+      .cls-line-orange {
+        fill: none;
+        stroke: #e05e0a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <!-- Monitor / Base Baseplate -->
+    <rect class="cls-dark" x="25" y="30" width="120" height="90" rx="10" ry="10"/>
+    <rect class="cls-light" x="35" y="40" width="100" height="70" rx="6" ry="6"/>
+    
+    <!-- Base stand -->
+    <rect class="cls-dark" x="73" y="120" width="24" height="20"/>
+    <rect class="cls-dark" x="50" y="140" width="70" height="12" rx="4" ry="4"/>
+    <rect class="cls-orange" x="65" y="143" width="40" height="6" rx="2" ry="2"/>
+
+    <!-- Support Headset over monitor -->
+    <!-- Headband arc -->
+    <path class="cls-line" d="M 42 75 C 42 20, 128 20, 128 75" style="stroke-width: 8px; stroke: #222; fill: none; stroke-linecap: round;"/>
+    <path class="cls-line-orange" d="M 52 70 C 52 32, 118 32, 118 70" style="stroke-width: 3px;"/>
+
+    <!-- Ear pads (left & right) -->
+    <rect class="cls-orange" x="34" y="60" width="16" height="34" rx="7" ry="7"/>
+    <rect class="cls-dark" x="37" y="65" width="10" height="24" rx="4" ry="4"/>
+    
+    <rect class="cls-orange" x="120" y="60" width="16" height="34" rx="7" ry="7"/>
+    <rect class="cls-dark" x="123" y="65" width="10" height="24" rx="4" ry="4"/>
+
+    <!-- Microphone boom & mic -->
+    <path class="cls-line" d="M 42 85 Q 46 108 72 108" style="stroke-width: 4px; stroke: #222; fill: none; stroke-linecap: round;"/>
+    <rect class="cls-orange" x="72" y="103" width="16" height="10" rx="4" ry="4"/>
+    <circle class="cls-light" cx="80" cy="108" r="2"/>
+
+    <!-- Screen Content: IT Support Wave / Gear & Check -->
+    <!-- Sound/Support Frequency wave inside screen -->
+    <rect class="cls-orange" x="58" y="62" width="6" height="26" rx="3" ry="3"/>
+    <rect class="cls-dark" x="68" y="52" width="6" height="42" rx="3" ry="3"/>
+    <rect class="cls-orange" x="78" y="46" width="6" height="52" rx="3" ry="3"/>
+    <rect class="cls-dark" x="88" y="56" width="6" height="36" rx="3" ry="3"/>
+    <rect class="cls-orange" x="98" y="66" width="6" height="18" rx="3" ry="3"/>
+    <rect class="cls-dark" x="108" y="72" width="6" height="10" rx="3" ry="3"/>
+
+    <!-- Floating Tool: Wrench Badge in top right -->
+    <circle class="cls-dark" cx="134" cy="34" r="16"/>
+    <circle class="cls-orange" cx="134" cy="34" r="13"/>
+    <!-- Wrench icon inside badge -->
+    <path class="cls-light" d="M141.5 28.5 C139.8 26.8 137 26.5 135 27.6 L137.2 29.8 L135.8 31.2 L133.6 29 C132.5 31 132.8 33.8 134.5 35.5 C135.8 36.8 137.6 37.3 139.3 36.8 L129.5 46.6 C128.8 47.3 127.7 47.3 127 46.6 C126.3 45.9 126.3 44.8 127 44.1 L136.8 34.3 C136.3 32.6 136.8 30.8 138.1 29.5 Z"/>
+    
+    <!-- Status Indicator dots -->
+    <circle class="cls-gray" cx="42" cy="46" r="2.5"/>
+    <circle class="cls-gray" cx="49" cy="46" r="2.5"/>
+    <circle class="cls-orange" cx="56" cy="46" r="2.5"/>
+  </g>
+</svg>
